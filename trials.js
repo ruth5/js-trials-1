@@ -78,6 +78,7 @@ function getRange(start, stop) {
   for (let num = start; num < stop; num += 1) {
     nums.push(num);
   }
+  return(nums);
 }
 
 // Given a string, return a string where vowels are replaced with '*'.
@@ -205,6 +206,7 @@ function compress(string) {
     if (char !== currChar) {
       compressed.push(currChar);
 
+      
       if (charCount > 1) {
         compressed.push(charCount.toString());
       }
